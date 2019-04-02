@@ -1,11 +1,13 @@
 var katzDeliLine = [];
     
+  
+var place = katzDeliLine.length;
+    
+    
 function takeANumber(katzDeliLine, name) {
 
   
   katzDeliLine.push(name);
-  
-var place = katzDeliLine.length;
 
   return `Welcome, ${name}. You are number ${place} in line.`
 }
@@ -16,7 +18,7 @@ function nowServing(katzDeliLine) {
   while (i < katzDeliLine.length ) {
     i++;
   }
-  if (katzDeliLine.length === 0) {
+  if (place === 0) {
     return "There is nobody waiting to be served!";
   }
   else
@@ -24,7 +26,8 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  
+  if()
+  return (`Currently serving ${katzDeliLine.shift()}.`);
 }
 
  var line = [];

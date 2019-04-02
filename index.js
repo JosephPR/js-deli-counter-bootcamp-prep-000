@@ -26,7 +26,7 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  if()
+  if(place === 0)
   return (`Currently serving ${katzDeliLine.shift()}.`);
 }
 
